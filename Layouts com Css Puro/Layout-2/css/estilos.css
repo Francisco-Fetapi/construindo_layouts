@@ -1,0 +1,195 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    background-color: #202020;    
+}
+body{
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:0px;
+    width:90%;
+    background-color: white;
+}
+#linha1{
+    margin-left:9px;
+    margin-right:9px;
+    color: gray;
+    text-shadow:1px 1px 1px black;
+    height:80px;
+    padding:12px;
+}
+#desc{
+    float: left;
+}
+#desc h3{
+    font-family: cursive;
+    font-size:30px;
+    margin:0px;
+}
+#desc p{
+    margin-top: 7px;
+    font-size:19px;
+    text-indent:19px;
+}
+#redes-sociais{
+    float: right;
+}
+#redes-sociais ul{
+    margin-top:15%;
+    display: flex;
+    list-style: none;
+}
+#redes-sociais ul li{
+    margin-left:7px;
+}
+#redes-sociais .fa{
+    background-color: rgba(192, 186, 186, 0.877);
+    padding:5px 9px;
+}
+
+#linha2{
+    background-color: #202020;
+    color: white;
+}
+#linha2 ul{
+    margin-left:32px;
+    list-style: none;
+    display: flex;
+}
+#linha2 li a{
+    display:block;
+    padding:12px 9px;
+    color: rgba(255, 255, 255, 0.719);
+    text-decoration:none;
+    font-size:18px;
+}
+#linha2 li a:hover{
+    background-color: rgba(0, 0, 0, 0.829);
+}
+#tudo{
+    background-color: #cccccc;
+    margin-top: 0px;
+    width:100%;
+    padding:19px 32px;
+    height:160vh;
+    position: relative;
+}
+#principal{
+    float: left;
+    width:95%;
+    min-width:300px;
+}
+#direita{
+    width:32%;
+    min-width:200px;
+    right:20px;
+    position: absolute;
+}
+.cartao{
+    padding:12px 19px;
+    width:30%;
+    margin-right:12px;
+    margin-bottom:7px;
+    min-width:200px;
+    background-color: white;
+    float: left;
+}
+.cartao img{
+    width: 100%;
+    height:220px;
+}
+.cartao h3{
+    margin:6px;
+    color: gray;
+    font-weight: 900;
+    text-shadow: 1px 1px 1px black;
+    font-size:25px;
+    text-align: center;
+}
+.cartao span.info{
+    color: rgba(0, 0, 0, 0.575);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.822);
+    margin:14px;
+}
+.cartao p{
+    margin-top:22px;
+    margin-bottom:22px;
+    text-indent:12px;
+    color: rgb(41, 41, 41);
+    line-height:20px;
+}
+.cartao button{
+    padding:7px 12px;
+    outline: none;
+    border: none;
+    color: white;
+    background-color: #ed0c2f;
+}
+.cartao button:hover{
+    background-color: #b60722;
+}
+.cartao button:active{
+    background-color: #7c0315;
+}
+.cartao hr{
+    margin-top:12px;
+    margin-bottom:12px;
+}
+.cartao ul{
+    list-style: none;
+}
+.cartao ul li{
+    color: gray;
+}
+.cartao ul li span{
+    margin-right:5px;
+}
+.a{
+    padding-left:22px;
+    padding-bottom:2px;
+    background-color: white;
+}
+.a h3{
+    padding:6px;
+    margin-bottom:19px;
+    color: rgba(0, 0, 0, 0.74);
+}
+.a ul{
+    display: flex;
+    list-style: none;
+}
+.a li{
+    margin-right:4px;
+}
+.a li a{
+    padding: 6px;
+    background-color: #ec1133;
+    color:white;
+    text-decoration: none;
+}
+.cartaozinho{
+    margin-top:22px;
+}
+.cartaozinho figure{
+    margin-bottom:42px;
+}
+.cartaozinho img{
+    width:120px;
+    height:80px;
+    float: left;
+    margin-right:12px;
+}
+.cartaozinho figcaption{
+    color: crimson;
+    font-family:sans-serif;
+    margin-bottom:9px;
+}
+.cartaozinho span{
+    color: gray;
+    font-weight: 700;
+}
+#seg{
+    margin-top:20px;
+}

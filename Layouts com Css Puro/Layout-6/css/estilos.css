@@ -1,0 +1,236 @@
+*{
+    margin:0px;
+    padding: 0px;
+    font-size: normal;
+}
+@font-face{
+    src: url('../fonts/comic.otf');
+    font-family: 'font1';
+}
+@font-face{
+    src: url('../fonts/krinsker.ttf');
+    font-family: 'font2';
+}
+body{
+    display: flex;
+    flex-flow: column wrap;
+    background-color: rgba(0, 0, 0, 0.116);
+    overflow-x: hidden;
+}
+header{
+    background-image: url('../img/header.jpg');
+    height:100vh;
+    max-height:530px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat:no-repeat;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: relative;
+    transition: filter 1s ease;
+}
+header:hover{
+    filter: saturate(2);
+}
+header ul{
+    display: flex;
+    list-style: none;
+    flex-flow: row wrap;
+}
+header li{
+    padding:8px;
+}
+header h1{
+    font-family:'font2';
+    padding:10px;
+    font-size:58px;
+    color: rgba(255, 255, 255, 0.89);
+    text-shadow: 1px 1px 1px black;
+}
+header p{
+    padding: 10px;
+    font-family: 'font1';
+    font-size:22px;
+    position: relative;
+}
+header p::before{
+    content: '';
+    left:-15px;
+    top: 50%;
+    position: absolute;
+    display: inline-block;
+    width:20px;
+    height:1px;
+    background-color: white;
+}
+header p::after{
+    content: 'em 12/12/2020';
+    font-size:0.75rem;
+    position: absolute;
+    bottom:-5px;
+    right:-20px;
+}
+header > ul{
+    padding:10px;
+}
+header > ul .fa{
+    padding:8px 10px;
+    font-size:22px;
+    border-radius:50%;
+    border: 1px solid white;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+header > ul .fa-facebook:hover{
+    background-color: rgba(30, 86, 238, 0.767);
+}
+header > ul .fa-twitter:hover{
+    background-color: rgba(24, 149, 233, 0.767);
+}
+header > ul .fa-google:hover{
+    background-color: rgba(219, 44, 32, 0.767);
+}
+header > ul .fa-pinterest:hover{
+    background-color: rgba(255, 27, 10, 0.767);
+}
+header div{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    position: absolute;
+    bottom:0px;
+    width:100%;
+    height:60px;
+    align-items: center;
+    background-color: rgba(219, 52, 52, 0.747);
+}
+header div li{
+    cursor:pointer;
+    font-weight: 500;
+    font-size: 1.2em;
+    font-family: 'font1';
+    transition: all .5s ease;
+}
+header div li:hover{
+    color: rgba(0, 0, 0, 0.336);
+}
+
+/* CARTOES */
+#main{
+    width:90%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-self: center;
+    margin-top:15px;
+    background-color: white;
+    box-shadow: 1px 0px 2px black,0px 0px 8px black;
+    padding:20px;
+    /* box-shadow: 5px 2px 5px white,0px 5px 12px white; */
+}
+#main .cartao{
+    font-family: 'font1';
+    color:#424242;
+    flex:1 1 31.5%;
+    max-width:410px;
+    padding-bottom:5px;
+    margin-bottom:15px;
+    border-bottom: 2px solid #ccc;
+}
+#main .cartao + .cartao{
+    border-left:25px solid #fff;
+}
+#main .cartao figure{
+    width:100%;
+    text-align: center;
+}
+#main .cartao img{
+    width:100%;
+    height:290px;
+}
+#main .cartao figcaption span{
+    color: rgba(207, 25, 65, 0.945);
+    font-size: 17px;
+    text-shadow: 1px 1px 1px black;
+    display: block;
+    margin:5px auto 5px auto;
+}
+#main .cartao figcaption h1{
+    margin-bottom:14px;
+}
+#main .cartao p{
+    text-align: justify;
+}
+#main .cartao ul{
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+}
+#main .cartao > ul{
+    margin-top: 12px;
+    justify-content: space-between;
+}
+#main .cartao > ul ul > li{
+    padding:4px;
+    color: #333;
+}
+
+@media(max-width:1025px){
+    #main{
+        /* flex-basis:48%; */
+        justify-content: center;
+    }   
+}
+@media(max-width:750px){
+    #main{
+        width:80%;
+        flex-direction: column;
+    }   
+    #main .cartao{
+        flex-basis:90%;
+        max-width:570px;
+        align-self: center;
+    }
+}
+
+@media (max-width:625px){
+    *{
+        font-size:.8999rem;
+    }
+    header h1{
+        font-size:3rem;
+    }
+    header p{
+        font-size:1.2rem;
+    }
+    header .fa{
+        font-size:1rem;
+    }
+}
+@media (max-width:565px){
+    #main{
+        width:93%;
+    }
+    header h1{
+        text-align: center;
+    }
+    header div{
+        height: auto;
+        padding:10px;
+    }
+    header div ul:first-child{
+        display: none;
+    }
+    header div ul:last-child{
+        display: none;
+    }
+}
+@media (max-width:420px){
+    header div ul li{
+        padding:5px;
+    }
+}

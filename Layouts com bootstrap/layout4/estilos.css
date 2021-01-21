@@ -1,0 +1,141 @@
+body{
+    background-color: rgba(0, 0, 0, 0.781);
+    color: white;
+}
+.div1{
+    background-color: rgb(22, 233, 233);
+    height:25px;
+}
+.div1 ul,.div1 a{
+    color: white;
+}
+.div1 ul:first-child,a.navbar-brand{
+    margin-left:10%;
+}
+.div1 ul:last-child{
+    margin-right:10%;
+}
+.bg-trans{
+    background-color: transparent;
+}
+.banner{
+    background: url('1.jpg') no-repeat;
+    background-size: cover;
+    height:100vh;
+}
+.navbar li a{
+    color: white;
+}
+div .btn:hover{
+    background-color:rgba(0, 0, 0, 0.651);
+}
+.navbar-nav li a:hover{
+    background: transparent;
+}
+.navbar-nav li:hover{
+    border-bottom: 2px solid rgb(0, 119, 255);
+    transition:all .4s linear;
+}
+.form-control{
+    border-radius: 0px;
+    box-shadow:none;
+}
+.desc{
+    margin-left:10%;
+    margin-top:65vh;
+    color: white;
+}
+.desc h2::first-letter{
+    color: crimson;
+    font-size: 210%;
+    font-family: cursive;
+    border-bottom: 4px solid white;
+    letter-spacing:-20px;
+}
+.desc h2{
+    font-size:200%;
+    /* text-shadow:1px 0px 0px white; */
+    font-weight: 600;
+    margin-bottom:4vh;
+}
+.desc p{
+    font-size:110%;  
+    text-indent: 28px;
+}
+.desc .btn{
+    width:140px;
+    font-size:large;
+}
+main {
+    margin-top:50px;
+}
+main div.fa{
+    border-radius:9px;
+    font-size:xx-large;
+    padding:19px 15px;
+}
+.thumbnail{
+    border: 0;
+    background-color: transparent;;
+}
+.caption p{
+    color: white;
+}
+@media (max-width:764px){
+    .icon-bar{
+        display: none;
+    }
+    .navbar-toggle{
+        padding: 0px;
+    }
+    .glyphicon-menu-hamburger{
+        color: white;
+        padding:8px 12px;
+        border: 1px solid rgba(255, 255, 255, 0.486);
+    }
+    .glyphicon-menu-hamburger:hover{
+        background-color: rgba(0, 0, 0, 0.555);
+    }
+    .glyphicon-menu-hamburger:active{
+        background-color: rgba(0, 0, 0, 0.836);
+    }
+    .centraliza{
+        margin-left:8%;
+        margin-right: auto;
+    }
+}
+@media (max-width:645px){
+    .desc h2::first-letter{
+        font-size: 190%;
+    }
+    .desc h2{
+        font-size:170%;
+    }
+    .desc p{
+        font-size:100%;  
+        text-indent: 28px;
+    }
+}
+@media (max-width:545px){
+    .div1 ul:first-child,a.navbar-brand{
+        margin-left:0%;
+    }
+    .div1 ul:last-child{
+        margin-right:0%;
+    }
+    .desc h2::first-letter{
+       border-bottom: none;
+       letter-spacing:0px;
+    }
+    .desc h2{
+        font-size:130%;
+    }
+}
+@media (max-width:475px){
+    .div1 ul:first-child li,a.navbar-brand{
+        font-size:80%;
+    }
+    .div1 ul:last-child li {
+        font-size:70%;
+    }
+}
